@@ -1,0 +1,677 @@
+body {
+  margin: 0;
+}
+
+
+#header {
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  /*font-family: 'Slabo 27px', serif;*/
+  font-family: Garamond, sans-serif;
+  letter-spacing: normal;
+}
+
+.header-color {
+  background-color: rgba(8, 65, 145, .7);
+  //border-top-right-radius: 1em;
+  //border-top-left-radius: 1em;
+}
+
+.header-image {
+  background-color: rgba(146, 208, 80, 1);
+  width: 10%;
+  margin: 0;
+  padding: 0;
+  //border-top-left-radius: 1em;
+}
+
+
+/***************NAVBAR*******************/
+
+#nav-bar-table {
+  border-collapse: collapse;
+}
+
+.navbar {
+  list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(76, 76, 83, .85);
+	color: white;
+	/*position: fixed;*/
+	/*height: 40px;*/
+	height: 2.5em;
+	width: 100%;
+	z-index: 10;
+	text-align: center;
+}
+
+.nav-item {
+  border: none;
+  display: inline-block;
+	font-family: Helvetica;
+	font-size: 80%;
+	line-height: 3.5em;
+	text-transform: uppercase;
+	margin: 0;
+	/*padding-left: 3.5em;
+	padding-right: 3.5em;*/
+	cursor: pointer;
+  border-radius: .4em .4em .4em .4em;
+}
+
+.nav-item-first {
+  border-radius: 0em .4em .4em 0em !important;
+}
+
+.nav-item-spec {
+  background-color: rgba(146, 208, 80, 1) !important;
+  margin: 0;
+  bottom: 20em;
+}
+
+a.nav-text {
+  text-decoration: none;
+  color: #fff;
+  padding: 5%;
+}
+
+.nav-item:hover {
+	background-color: #75b135;
+  transition: .3s;
+}
+
+/*CHECK*/
+.nav-item:active {
+	background-color: rgba(255, 255, 255, 1);
+	color: #444;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100% !important;
+}
+
+.members_home {
+  background-image: url("/Users/davisbooth/Desktop/Thorton Wood/members.JPG") !important;
+  //height: 1500px !important;
+}
+
+.fin-spec {
+  background-image: url("/Users/davisbooth/Desktop/Thorton Wood/BackgroundPic3.JPG") !important;
+}
+
+.cont-spec {
+  background-image: url("/Users/davisbooth/Desktop/Thorton Wood/BackgroundPic2.JPG") !important;
+}
+
+.members-nav {
+  background-color: rgba(255, 81, 81, 1) !important;
+  border-radius: .4em 0em 0em .4em;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+}
+
+.members-nav:hover {
+  background-color: rgba(255, 100, 100, 1) !important;
+}
+
+.faq {
+    border: none;
+    outline: none;
+    background-color: #e2e2e2;
+    color: #666666;
+    font-family: 'Slabo 27px', serif;
+    font-size: 130%;
+    cursor: pointer;
+    padding: 1em;
+    width: 100%;
+    text-align: left;
+    transition: 0.3s;
+    border-radius: .3em;
+}
+
+.faq:after {
+  content: '\02795';
+  display: block;
+  width: 3px;
+  height: 5px;
+  float: right;
+  margin-left: 5px;
+  margin-right: 1em;
+}
+
+.faq:hover {
+  background-color: #d2d2d2;
+}
+
+.apps {
+
+}
+
+.apps:after {
+  content: '\2794' !important;
+}
+
+.displaying {
+  background-color: #d2d2d2;
+}
+
+.displaying:after {
+  content: '\2212';
+  display: block;
+  width: 3px;
+  height: 5px;
+  float: right;
+  margin-left: 5px;
+  margin-right: 1em;
+}
+
+.drop-down {
+  margin-left: 2em;
+  transition: 1s ease-out;
+  display: none;
+  overflow: hidden;
+  color: #333333;
+  font-family: 'Slabo 27px', serif;
+  font-size: 18px;
+  line-height: 1.4;
+  padding: 0 1em;
+  margin-right: 20%;
+}
+
+
+.docsF {
+    background-color: #e2e2e2;
+    color: #666666;
+    font-family: 'Slabo 27px', serif;
+    font-size: 130%;
+    cursor: pointer;
+    padding: 1em;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    height: 10%;
+    border-radius: .3em;
+}
+
+.docsF:hover {
+  background-color: #d2d2d2;
+}
+
+.docsF:after {
+    content: "\2192";
+    display: block;
+    width: 3px;
+    height: 5px;
+    float: right;
+    margin-left: 5px;
+    margin-right: 1em;
+}
+
+.docs-spec {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: .5em;
+  margin-right: 20%;
+  margin-left: 2%;
+}
+
+.docs-spec-2 {
+  background-color: rgba(242, 242, 242, .95) !important;
+}
+
+/***************END NAVBAR**************/
+
+/***************BEGIN MAIN PICTURE*******/
+
+.entrance-picture {
+  background-image: url("/Users/davisbooth/Desktop/Thorton Wood/BackgroundPic.jpg");
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+  transition: 2s;
+}
+
+.entrance-text {
+  color: rgba(8, 65, 145, 0);
+  font-family: 'Pacifico', cursive;
+  top: 25%;
+  bottom: 50%;
+  position: absolute;
+  font-size: 2em;
+  text-outline: 2px white;
+  animation-name: easy;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  text-align: center;
+  align-content: center;
+}
+
+.animate-me {
+  animation-name: increment;
+  animation-duration: 10s;
+  animation-delay: 1s;
+  //animation-fill-mode: backwards;
+  animation-fill-mode: both;
+}
+
+#member-one {
+  animation-delay: 1s !important;
+}
+
+#member-two {
+  animation-delay: 4s !important;
+  animation-duration: 6.7s;
+}
+
+#member-three {
+  animation-delay: 7s !important;
+  animation-duration: 3.7s;
+}
+
+@keyframes increment {
+  0% {display: block !important; opacity: 0;}
+  5% {display: block !important; opacity: .5;}
+  10% {display: block !important; opacity: 1;}
+  90% {display: block !important; opacity: 1}
+  95% {display: block !important; opacity: .5}
+  100% {display: block !important; opacity: 0;}
+}
+
+@keyframes easy {
+  0% {left: .1em; color: rgba(255, 81, 81, 1);}
+  50% {left: .2em; color: rgba(255, 81, 81, 1);}
+  51% {left: .3em; color: rgba(255, 81, 81, .8);}
+  52% {left: .3em; color: rgba(255, 81, 81, .7);}
+  53% {left: .3em; color: rgba(255, 81, 81, .6);}
+  54% {left: .3em; color: rgba(255, 81, 81, .5);}
+  55% {left: .3em; color: rgba(255, 81, 81, .4);}
+  56% {left: .3em; color: rgba(255, 81, 81, .3);}
+  57% {left: .3em; color: rgba(255, 81, 81, .2);}
+  58% {left: .3em; color: rgba(255, 81, 81, .1);}
+  59% {left: .3em; color: rgba(255, 81, 81, 0);}
+  100% {left: .3em; color: rgba(255, 81, 81, 0);}
+}
+
+.members-btn {
+  z-index: 100;
+  position: fixed;
+  bottom:2%;
+  right: 2%;
+  border-radius: 1em;
+  background-color: rgba(255, 81, 81, 1);
+  color: white;
+  border-color: transparent;
+  padding: .5em 3em;
+  font-family: 'Slabo 1em', serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.members-btn:focus {
+  outline: 0;
+}
+
+.members-btn:active {
+  border: none;
+}
+
+/**************BEGIN CONTENT**************/
+
+
+.content {
+  border-top-color: grey;
+  border-top-width: 0em;
+  border-top-style: solid;
+}
+
+
+a.member-home-link {
+    display: block;
+}
+
+
+/********COPYRIGHT***********/
+
+
+.copyright {
+  background-color: rgba(8, 65, 145, .7);
+  color: white;
+  //border-bottom-left-radius: 1em;
+  //border-bottom-right-radius: 1em;
+  padding: .2em 1em;
+  font-family: Garamond;
+}
+
+
+/********CONTACT PAGE***********/
+/********CONTACT PAGE***********/
+/********CONTACT PAGE***********/
+
+.contact-table {
+  /*padding: 2em;*/
+  float: left;
+  /*padding-right: 2em;*/
+  margin-right: 5%;
+  margin-top: 1%;
+  width: 26.666%;
+  /*background-color: #eeeeee;*/
+  text-align: center;
+  margin-bottom: 7%;
+}
+
+.first {
+  margin-left: 5%;
+}
+
+.last {
+  margin-right: 5% !important;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: black;
+}
+
+.text-option {
+  width: 26.6% !important;
+  background-color: #f2f2f2;
+  border-radius: .5em;
+  height: 40%;
+  /*border-radius: .2em;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;*/
+}
+
+.contact-header {
+  font-family: 'Slabo 27px';
+  font-size: 150%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.sub-text {
+  color: #75b135;
+  /*color: #666666;*/
+  text-transform: uppercase;
+  font-family: 'Slabo 27px';
+  font-size: 75%;
+  margin-top: .2em;
+  padding-top: 0;
+}
+
+.small {
+  display: inline;
+  float: left;
+  width: 6%;
+  margin-left: 10%;
+  margin-right: 0%;
+}
+
+.contact-text {
+  font-family: 'Slabo 27px';
+  font-size: 75%;
+  width: 79%;
+  float: left;
+  color: #666666;
+  margin-right: 3%;
+  padding-right: 0;
+  margin-top: .2em;
+  padding-top: 0;
+  text-align: left !important;
+
+}
+
+.header {
+  font-family: Verdana !important;
+  color: #75b135;
+  margin-left: 2%;
+  font-size: 2em;
+  margin-top: 5%;
+}
+
+.contact-pm-table {
+  height: 30%;
+  width: 90%;
+}
+
+.member-home-option {
+  background-color: rgba(242,242,242, 0.95) !important;
+  height: 250px !important;
+  float: left;
+  margin-right: 5%;
+  margin-top: 1%;
+  width: 26.666%;
+  text-align: center;
+  margin-bottom: 7%;
+}
+
+
+
+
+.photo-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.photo-column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.photo-img {
+  width: 13.9% !important;
+  height: auto !important;
+  margin-top: 8px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+
+.financial-option {
+  width: 30% !important;
+}
+
+.fin-first {
+  margin-left: 15% !important;
+}
+
+.fin-last {
+  margin-right: 15% !important;
+}
+
+.trans {
+  background-color: transparent !important;
+}
+
+.trans:hover {
+  background-color: transparent !important;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.member-home-option:hover {
+  background-color: rgba(242,242,242, 1) !important;
+}
+
+.logout-spec {
+  background-color: rgba(255, 81, 81, .9) !important;
+}
+
+.logout-spec:hover {
+  background-color: rgba(255, 81, 81, .95) !important;
+}
+
+.bylaw-spec {
+  background-color: rgba(242,242,242, 0.95) !important;
+}
+
+.bylaw-spec:hover {
+  background-color: rgba(242, 242, 242, 1) !important;
+  color: white;
+}
+
+.pm-image {
+  height: auto;
+  width: auto;
+  width: inherit;
+}
+
+.member-image {
+  height: 14em !important;
+  width: auto;
+}
+
+.element {
+  width:30%;
+  margin: 2em;
+  text-align: center;
+  padding: 0;
+  font-family: 'Slabo 27px';
+  font-size: .8em;
+  align: center;
+}
+
+.pm-table {
+  margin-bottom: 5%;
+  padding-bottom: 5%;
+}
+
+.spacer {
+  height: .7%;
+}
+
+.vertical-section {
+  width: 100%;
+  height: auto;
+  z-index: 5;
+  background-color: rgba(255,255,255, .95);
+}
+
+.background-pic {
+  width: 100%;
+  height: 40%;
+  background-image: url("/Users/davisbooth/Desktop/Thorton Wood/BackgroundPic2.jpg");
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%
+}
+
+.gov-spec {
+  background-image: url("/Users/davisbooth/Desktop/Thorton Wood/BackgroundPic2.jpg")
+}
+
+#background2 {
+  background-image: url("/Users/davisbooth/Desktop/Thorton Wood/BackgroundPic3.jpg")
+}
+
+.paragraph-text {
+  margin-right: 20%;
+  margin-left: 2%;
+  font-family: 'Slabo 27px';
+  line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-character;
+  font-size: 20px;
+}
+
+.real-estate {
+  background-color: #f2f2f2;
+  border-radius: .5em;
+  transition: .2s;
+}
+
+.real-estate:hover {
+  height: 51%;
+  width: 27% !important;
+}
+
+.real-estate {
+  height: 50%;
+}
+
+.real-estate-img {
+  height: 75%;
+  width: 100%;
+  border-top-left-radius: .5em;
+  border-top-right-radius: .5em;
+}
+
+.address-text {
+  font-size: 19px;
+  font-family: 'Slabo 27px';
+}
+
+.none {
+  float: center;
+}
+
+.none-wrapper {
+  text-align: center;
+  margin-top: 15%;
+  font-family: 'Slabo 27px';
+  letter-spacing: 1;
+  color: #aaaaaa;
+  font-size: 20px;
+
+}
+
+/*** DEBUG
+
+* {
+  border: 1px solid red !important;
+}
+*

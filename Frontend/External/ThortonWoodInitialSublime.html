@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <!-- <? require('sas.php'); ?> -->
+    <title>Thornton Wood</title>
+    <link rel="icon" type="image/png" href="/Users/davisbooth/Desktop/Thorton Wood/TWLogo3.png"/>
+    <link rel="stylesheet" href="/Users/davisbooth/Desktop/Thorton Wood/twCSS.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"/>
+    <script src="TWJS.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    var header = $('.entrance-picture');
+
+    var backgrounds = new Array(
+       'url(/Users/davisbooth/Desktop/Thorton Wood/BackgroundPic.jpg)'
+      , 'url(BackgroundPic2.JPG)'
+      , 'url(BackgroundPic3.JPG)'
+      , 'url(BackgroundPic4.JPG)'
+      , 'url(BackgroundPic5.JPG)'
+      , 'url(BackgroundPic6.JPG)'
+      , 'url(BackgroundPic7.JPG)'
+      , 'url(members.JPG)'
+    );
+
+    var current = 0;
+
+    function nextBackground() {
+        current++;
+        current = current % backgrounds.length;
+        header.css('background-image', backgrounds[current]);
+    }
+    setInterval(nextBackground, 7000);
+
+    header.css('background-image', backgrounds[0]);
+    });
+    </script>
+  </head>
+<body>
+  <!-- #BeginLibraryItem "/Library/Page Header.lbi" -->
+  <table id = "header" height = "15%" width="100%">
+    <tbody>
+      <tr>
+        <!--<td class = "header-image">
+          <a href="/Users/davisbooth/Desktop/Thorton Wood/ThortonWoodInitialSublime.html">
+            <img src = "/Users/davisbooth/Desktop/Thorton Wood/TWLogo3.png">
+          </a>
+        </td>
+        <td style="padding-right: .3em;"></td>-->
+        <td class = "header-color" width="90%">
+          <a style="text-decoration:none;" href="/Users/davisbooth/Desktop/Thorton Wood/ThortonWoodInitialSublime.html">
+          <div align="center"><font color="white" size="7em"><strong>Thornton
+            Wood Condominium Association</strong></font>
+          </div>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table width="100%" id = "nav-bar-table" cellpadding = "0" cellspacing = "0">
+    <tbody>
+      <td style="padding-top: .3em;"></td>
+      <tr class = "navbar" id = "navbar" width = "100%">
+        <!--<td width = "10.70%" class = "nav-item-spec"></td>-->
+        <td width="22%" id = "home" class = "nav-item nav-item-first"><a class = "nav-text" href = "/Users/davisbooth/Desktop/Thorton Wood/ThortonWoodInitialSublime.html">Home</a></td>
+        <td width="22%" class = "nav-item"><a class = "nav-text" href = "TWAboutUs.html">About us</a></td>
+        <td width="22%" class = "nav-item"><a class = "nav-text" href = "TWRealEstate.html">Real Estate</a></td>
+        <td width="22%" class = "nav-item"><a class = "nav-text" href = "TWContactUs.html">Contact Us</a></td>
+        <td width="12%" class = "members-nav nav-item"><a class = "nav-text" href = "member-login.html">Members</a></td>
+      </tr>
+      <!--<button class="members-btn" href="">
+			  <div class="member-login-txt">Member<br>Login</div>
+		  </button>-->
+    </tbody>
+    <!--<script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset > sticky + 70) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>-->
+  </table>
+  <!-- #EndLibraryItem -->
+  <div>
+    <div class = "entrance-picture">
+      <!-- <center>
+        <div class = "entrance-text">
+          <h1 class = "entrance-text">Welcome</h1>
+        </div>
+      </center> -->
+    </div>
+  </div>
+  <div class = "spacer"></div>
+  <div class = "content" border = "0">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tbody>
+        <tr>
+          <td class="copyright" align="right">
+            <div align="center"><font size="2">Copyright
+              © 2005 Thornton
+              Woods Condominium Assn. . All Rights Reserved<br>
+              While all reasonable efforts have been made to insure accuracy of the
+              content herein presented, neither Thornton Wood Condominium
+              Association, it's Board of Directors, nor unit owners shall be
+              responsible for the content, use, or results of use of this web site.</font>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
